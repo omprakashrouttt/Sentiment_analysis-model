@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sentiment Analysis</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wordcloud"></script>
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Floating Emojis -->
+  <div id="emojiContainer"></div>
+
+  <div class="container">
+    <!-- Left panel: inputs -->
+    <section class="panel left-panel">
+      <h1>🔍 Sentiment Analysis</h1>
+      <p>Analyze the sentiment of your text with AI! 🎭</p>
+
+      <div class="input-section">
+        <label for="fileInput" class="upload-label">📂 Upload File</label>
+        <input type="file" id="fileInput" accept=".pdf,.txt,.png,.jpg,.jpeg"/>
+
+        <label for="textInput">📝 Your Text</label>
+        <textarea id="textInput" rows="4" placeholder="Enter text here..."></textarea>
+
+        <button id="analyzeBtn">🚀 Analyze</button>
+      </div>
+    </section>
+
+    <!-- Right panel: results & charts -->
+    <section class="panel right-panel">
+      <div id="result" class="hidden">
+        <h2>🧠 Results</h2>
+        <p><strong>Sentiment:</strong> <span id="sentimentText"></span></p>
+        <p><strong>Confidence:</strong> <span id="confidenceLevel"></span></p>
+        <div id="wordCloudContainer"></div>
+      </div>
+
+      <div class="charts-container">
+        <div class="chart-card">
+          <canvas id="sentimentBarChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <canvas id="sentimentPieChart"></canvas>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
