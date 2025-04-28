@@ -1,4 +1,4 @@
-# Sentiment Analysis Model
+# Sentiment Analysis Model 😊☹️
 
 This repository contains a transformer-based sentiment classification pipeline, combining weak supervision with Snorkel and rule-based labeling, followed by fine-tuning a DistilBERT encoder. It also includes a simple HTML/CSS/JavaScript frontend and a Flask backend for deployment, enabling end-to-end sentiment prediction via a web interface.
 
@@ -72,7 +72,7 @@ At its core, the pipeline fine-tunes **DistilBERT** (`distilbert-base-uncased`) 
 2. **Text cleaning**: regex-based normalization, lowercasing, removal of non-ASCII characters.
 3. **spaCy tokenization** (optional) for more advanced linguistic features.
 4. **Train/test split** via `sklearn.model_selection.train_test_split`.
-5. \*\*Convert to Hugging Face \*\***`Dataset`** for seamless integration with the `Trainer`.
+5. **Convert to Hugging Face Dataset** for seamless integration with the `Trainer`.
 
 ---
 
@@ -252,6 +252,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---
+
+## Contact 
+
+**Email** - omprakashrouttt1@gmail.com
 
 *Last updated: April 28, 2025*
 
