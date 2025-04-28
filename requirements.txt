@@ -1,0 +1,15 @@
+torch
+transformers
+snorkel
+spacy
+vaderSentiment
+scikit-learn
+datasets
+pandas
+numpy
+matplotlib
+flask
+flask-cors
+pdfplumber
+pytesseract
+Pillow
